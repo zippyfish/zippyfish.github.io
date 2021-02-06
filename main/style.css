@@ -1,0 +1,83 @@
+.taskbar {
+    position: absolute;
+    bottom:0;
+    background-color: rgb(167, 167, 167);
+    width: 99%;
+}
+.startText {
+    display: inline;
+    font-size: 24px;
+}
+img { height: 24px; width: 24px; margin-right: 4px; }
+body {
+    background: url(../img/abstract-1963884_1920.jpg)
+}
+.start-menu-wrapper{
+    border: 2px solid #7c7c7c;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    background: #c0c0c0;
+    position: fixed;
+    left: 2px;
+    bottom: 33px;
+    width: 190px;
+    min-height: 200px;
+    visibility: hidden;
+}
+    .start-menu-title{
+      height: 95%;
+      padding: 5px 5px;
+      background: linear-gradient(90deg, #00007b 0%, #0000ff 5%, #00007b 100%);
+      color: #fff;
+      width: 40px;
+      float: left;
+      text-transform: uppercase;
+      font-size: 20px;
+      position: absolute;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+      span{
+        transform: rotate(-90deg);
+        transform-origin: left 0;
+        position: absolute;
+        left: 10px;
+        bottom: -10px;
+      }
+    
+    
+    .start-menu{
+      margin-left: 40px;
+    }
+    .time {
+        padding: 6px 10px;
+        position: absolute;
+        right:0;
+        font-family: Pixelated MS Sans Serif;
+      }
+      .el-hidden {
+          visibility: hidden;
+      }
+      .context {
+          visibility: hidden;
+          cursor: pointer;
+      }
+      .start-list {
+          display: inline;
+      }
+      #window-1 {
+          visibility:hidden;
+      }
+      #window-2 {
+          visibility: hidden;
+      }
+      .window {
+        resize:both;
+        overflow:auto; /* something other than visible */
+        position: absolute;
+        align-items: center;
+      }
+
+
+      p {
+          font-family: Pixelated MS Sans Serif;
+      }
