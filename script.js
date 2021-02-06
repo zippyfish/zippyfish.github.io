@@ -1,0 +1,1 @@
+setTimeout(() => { location.href = "main/index.html" }, 5000);
