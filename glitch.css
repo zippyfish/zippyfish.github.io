@@ -1,16 +1,16 @@
 body {
-  background: black;
+  background: white;
   font-family: Roboto;
 }
 
 p {
     animation: noise-anim-2 15s infinite linear alternate-reverse;
-    color:white;	
+    color:black;	
     text-align:center;
 }
 
 .glitch {
-  color: white;
+  color: black;
   font-size: 100px;
   position: relative;
   width: 400px;
