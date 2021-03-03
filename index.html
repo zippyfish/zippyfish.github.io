@@ -1,61 +1,106 @@
+<!-- 
+    body {
+        scroll-behaivor:smooth
+    }
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/78455503">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/carbon-components@10.28.0/css/carbon-components.min.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zippy fish</title>
+    <title>zippyfish
+    </title>
 </head>
 <body>
-    <style>
-    * {
-        scrolling:smooth;
-        }
-    </style>
-    <header class="bx--header">
-        <a class="bx--skip-to-content" href="#main-content" tabindex="0">Skip to main content</a>
-    
-      <a class="bx--header__name" href="javascript:void(0)">zippy fish</a>
-      <nav class="bx--header__nav" aria-label="zippyfish!">
-          <ul class="bx--header__menu-bar" aria-label="zippyfish!">
-            <li>
-                <a href="" class="bx--header__menu-item" style="font-weight: bold;"><b>Home</b></a>
-            </li>  
-            <li>
-                  <a href="#Projects" class="bx--header__menu-item">
-                      Projects
-                  </a>
-              </li>
-              <li>
-                  <a href="https://github.com/zippyfish" class="bx--header__menu-item">My GitHub</a>
-              </li>
-              <li>
-                  <a href="https://kjbrobocat8.github.io/Tutorials" class="bx--header__menu-item">Tutorials (kjbrobocat8) - will be moved to zippyfish soon.</a>
-              </li>
-          </ul>
-      </nav>
-    </header>
-    
+    <div id="app" style="scroll-behavior: smooth;">
+        <template>
+            <ion-app>
+                <ion-content>
+                    <ion-tabs>
+                        <!-- Tab bar -->
+                        <ion-tab-bar slot="top">
+                          <ion-tab-button tab="Home">
+                              Home
+                          </ion-tab-button>
+                          <ion-tab-button tab="about" onclick="location.href='#about'">
+                              About
+                          </ion-tab-button>
+                          <ion-tab-button tab="myprojects" onclick="location.href='#projects'">
+                              Projects
+                          </ion-tab-button>
+                          <ion-tab-button tab="More_upcoming" onclick="location.href='#more-upcoming'">
+                              More and upcoming projects
+                          </ion-tab-button>
+                        </ion-tab-bar>
+                      </ion-tabs>
+                      <br><br><br><br><br>
+                      <div id="about">
+                          <ion-card>
+                            <ion-card-header>
+                                <ion-card-subtitle><code>&lt;zippyfish&gt;</code></ion-card-subtitle>
+                                <ion-card-title>About</ion-card-title>
+                              </ion-card-header>
+                              <ion-card-content>
+                                Hi there 👋<br>
+                               <blockquote> I’m currently working on Lightning videoChat. Lightning Video Chat is going through it's last UI Update in quite a while.</blockquote>
+                               <h2>I like</h2>
+                                <li>Vanilla JS</li>
+                                <li>React JS</li>
+                                <li>HTML5</li>
+                                <li> Web Development</li>
+                                <li>Material Design</li>
+                                <li>CSS</li>
 
-    <div class="bx--content">
-        <h2>
-        <img src="https://avatars.githubusercontent.com/u/78455503?s=400&u=6d0686b0ba947ff313122708c475a0f4f0634226&v=4" alt="me">
-        zippy fish, web dev
-        </h2>
-        <h1 id="Projects">Projects</h1>
-        <h2>⚡Lightning video Chat</h2>
-        <a href="https://zippyfish.github.io/Lightning-videoChat">Link</a><br>
-        a simple video chat app.
-        <br> Now with better UI!
-        <br><br><br><br>
-        <section>
-            <h1>Talk Flow</h1>
-            <p>The full-fledged chat application. </p>
-           <div class="bx--snippet bx--snippet--single"><div class="bx--snippet-container" tabindex="0"><code> Looking for <a href="https://kjbrobocat8.github.io/Chat.It">Chat.It?</a> <== It is deprecated as talk Flow has been developed.</code> </div>
-        </section>
-    </div>
+                              </ion-card-content>
+                          </ion-card>
+                          <br><br><br><br><br>
+                      </div>
+                      <div id="projects"><ion-card>
+                          <ion-card-header>
+                            <ion-card-header>
+                                <ion-card-subtitle><code>&lt;zippyfish&gt;</code></ion-card-subtitle>
+                                <ion-card-title>Projects</ion-card-title>
+                          </ion-card-header>
+                          <ion-card-content>
+                              <h1 style="color:black;"><a href="https://zippyfish.github.io/Lightning-videoChat/" style="color:black;">Lightning video chat.</a></h1>
+                              <br>a simple video chat app.
+                              <br><h1><a href="https://kjbrobocat8.github.io/talk_flow/" style="color:black;" class="hoverlink">Talk Flow</a></h1>
+                              <p>The Full-Fledged chat application.
+                                  <p>My Second React JS Project!</p>
+                              </p>
+                              <br><h1 style="color:black"><a href="https://zippyfish.github.io/asterisk_maps">asterisk Maps</a></h1>
+                              <p>the maps app that is yet simpler than Google maps.</p>
+                              <h1><a href="https://zippyfish.github.io/into_space" style="color: black;">into space</a></h1>
+                              <p>Travel <i>into space</i> with this simple HTML5 website.</p>
+                          </ion-card-content>
+                      </ion-card></div>
+                      <div id="more-upcoming">
+                          <ion-card>
+                              <ion-card-header>
+                                  <ion-card-subtitle><code>&lt;zippyfish&gt;</code></ion-card-subtitle>
+                              </ion-card-header>
+                              <ion-card-content style="color:black !important;">
+                                  <h1 style="color:black">More and Upcoming Projects</h1>
+                                  <h1>Space UI</h1>
+                                  <p>A futuristic UI design framework.</p>
+                              </ion-card-content>
+                          </ion-card>
+                      </div>
+                </ion-content>
+            </ion-app>
+        </template>
+      </div>
+    <script>
+        var app = new Vue({
+  el: '#app',
+  data: {}
+})
+
+    </script>
 </body>
 </html>
